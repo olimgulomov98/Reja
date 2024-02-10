@@ -1,5 +1,6 @@
 console.log("Web Serverni boshlash");
 const express = require("express");
+const res = require("express/lib/response");
 const app = express();
 const http = require("http");
 const fs = require("fs");
@@ -27,10 +28,6 @@ app.set("view engine", "ejs");
 // 4: Routing code
 app.post("/create-item", (req, res) => {
   // TODO: code with db here
-});
-
-app.get("/author", (req, res) => {
-  res.render("author", { user: user });
 });
 
 app.get("/author", (req, res) => {

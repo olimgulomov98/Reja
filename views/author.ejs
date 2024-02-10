@@ -62,27 +62,209 @@
             </div>
           </div>
           <div class="marginer"></div>
-          <div class="left_2"></div>
+          <div class="left_2">
+            <div class="left_info">
+              <div class="info_age">Age:</div>
+              <div><%=user.age%></div>
+            </div>
+            <div class="left_info">
+              <div class="info_res">Residence:</div>
+              <div><%=user.residence%></div>
+            </div>
+            <div class="left_info">
+              <div class="info_free">Freelance:</div>
+              <div style="color: #7eb942">Avaibale</div>
+            </div>
+            <div class="left_info">
+              <div class="info_address">Address:</div>
+              <div><%=user.address%></div>
+            </div>
+          </div>
           <div class="marginer"></div>
           <!-- LANGUAGES -->
-          <div class="left_3"></div>
+          <div class="left_3">
+            <div style="font-weight: bold">Languages</div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.language[0]%></div>
+              <div class="lang_style">100%</div>
+            </div>
+            <div class="lang_marginer"></div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.language[1]%></div>
+              <div class="lang_style">90%</div>
+            </div>
+            <div class="lang_marginer"></div>
+
+            <div class="left_language">
+              <div class="lang_style"><%=user.language[2]%></div>
+              <div class="lang_style">80%</div>
+            </div>
+            <div class="lang_marginer"></div>
+          </div>
           <!-- END LANGUAGES -->
           <div class="marginer"></div>
           <!-- SKILLS -->
-          <div class="left_4"></div>
+          <div class="left_4">
+            <div style="font-weight: bold">Skills</div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.skills[0]%></div>
+              <div class="lang_style">90%</div>
+            </div>
+            <div class="lang_marginer"></div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.skills[1]%></div>
+              <div class="lang_style">85%</div>
+            </div>
+            <div class="lang_marginer"></div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.skills[2]%></div>
+              <div class="lang_style">80%</div>
+            </div>
+            <div class="lang_marginer"></div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.skills[3]%></div>
+              <div class="lang_style">75%</div>
+            </div>
+            <div class="lang_marginer"></div>
+            <div class="left_language">
+              <div class="lang_style"><%=user.skills[4]%></div>
+              <div class="lang_style">80%</div>
+            </div>
+            <div class="lang_marginer"></div>
+          </div>
           <!-- END SKILLS  -->
           <div class="marginer"></div>
           <!-- EXTRA SKILLS -->
-          <div class="left_5"></div>
+          <div class="left_5">
+            <div style="font-weight: bold">Extra Skills</div>
+            <div class="extra_skills">
+              <img src="icon/extra.svg" class="extra_icons" alt="" />
+              <div class="skills_style"><%=user.extra_skills[0]%></div>
+            </div>
+            <div class="extra_skills">
+              <div class="extra_skills">
+                <img src="icon/extra.svg" class="extra_icons" alt="" />
+                <div class="skills_style"><%=user.extra_skills[1]%></div>
+              </div>
+            </div>
+            <div class="extra_skills">
+              <div class="extra_skills">
+                <img src="icon/extra.svg" class="extra_icons" alt="" />
+                <div class="skills_style"><%=user.extra_skills[2]%></div>
+              </div>
+            </div>
+            <div class="extra_skills">
+              <div class="extra_skills">
+                <img src="icon/extra.svg" class="extra_icons" alt="" />
+                <div class="skills_style"><%=user.extra_skills[3]%></div>
+              </div>
+            </div>
+          </div>
           <!-- END EXTRA SKILLS -->
           <div class="marginer"></div>
         </div>
         <!-- END LEFT FRAME -->
         <!-- MIDD FRAME -->
-        <div class="midd_frame"></div>
+        <div class="midd_frame">
+          <div class="mid_info">
+            <img class="rectangle1" src="box_images/rectangle1.svg" alt="" />
+            <img class="ellipse2" src="box_images/ellipse2.svg" alt="" />
+            <img class="ellipse1" src="box_images/ellipse1.svg" alt="" />
+            <img class="ellipse4" src="box_images/ellipse4.svg" alt="" />
+            <img class="ellipse3" src="box_images/ellipse3.svg" alt="" />
+            <img class="rectangle2" src="box_images/rectangle2.svg" alt="" />
+            <img class="polygon" src="box_images/polygon.svg" alt="" />
+
+            <div class="mid_info_style">
+              <div class="mid_info_wrapper"></div>
+              <div class="mid_info_wrapper">
+                <div class="mid_profession">I am a <%=user.profession%></div>
+                <div class="mid_about"><%=user.about_me%></div>
+                <div class="mid_btn">
+                  <div>HIRE ME</div>
+                  <img src="box_images/vector.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="mid_pic">
+              <img src="images/yourImage.png" alt="" />
+            </div>
+          </div>
+          <div class="mid_services">
+            <div class="my_serv">My Services</div>
+            <div class="servdesk_style"><%=user.service_desk%></div>
+            <div class="category_wrapper">
+              <div class="category">
+                <img src="btn_icon/coding.svg" alt="" />
+                <p class="category_main">Web Development</p>
+                <p class="category_tarif">Blog, E-Commmerce</p>
+              </div>
+              <div class="category">
+                <img src="btn_icon/illustration.svg" alt="" />
+                <p class="category_main">UI / UX design</p>
+                <p class="category_tarif">Mobile App, Website Design</p>
+              </div>
+              <div class="category">
+                <img src="btn_icon/microphone.svg" alt="" />
+                <p class="category_main">Sound Design</p>
+                <p class="category_tarif">Voice Over, Beat Making</p>
+              </div>
+              <div class="category">
+                <img src="btn_icon/game-development.svg" alt="" />
+                <p class="category_main">Game Design</p>
+                <p class="category_tarif">Character Design, Props & Objects</p>
+              </div>
+              <div class="category">
+                <img src="btn_icon/photographer.svg" alt="" />
+                <p class="category_main">Photography</p>
+                <p class="category_tarif">Portrait, Product Photography</p>
+              </div>
+              <div class="category">
+                <p class="category_main">Advertising</p>
+                <p class="category_tarif">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae
+                  nulla diam in ac dictum a urna viverra morbi.
+                </p>
+                <div class="vector_wrapper">
+                  <div style="color: rgba(255, 180, 0, 1)">ORDER NOW</div>
+                  <img
+                    style="width: 4.71px; height: 7.07px"
+                    src="btn_icon/vector.svg"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- END MIDD FRAME -->
         <!-- RIGHT FRAME -->
-        <div class="right_frame"></div>
+        <div class="right_frame">
+          <div class="right_btns">
+            <div class="one_btn">
+              <img src="menu_icon/contrast.svg" alt="" />
+            </div>
+            <div class="six_btns">
+              <div class="home_btn first">
+                <img class="btns_style" src="menu_icon/home.svg" alt="" />
+              </div>
+              <div class="home_btn">
+                <img class="btns_style" src="menu_icon/file-code.svg" alt="" />
+              </div>
+              <div class="home_btn">
+                <img class="btns_style" src="menu_icon/cv.svg" alt="" />
+              </div>
+              <div class="home_btn">
+                <img class="btns_style" src="menu_icon/portfolio.svg" alt="" />
+              </div>
+              <div class="home_btn">
+                <img class="btns_style" src="menu_icon/blog.svg" alt="" />
+              </div>
+              <div class="home_btn">
+                <img class="btns_style" src="menu_icon/contact.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- END RIGHT FRAME -->
       </div>
     </div>
