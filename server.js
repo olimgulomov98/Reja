@@ -38,7 +38,7 @@ app.get("/", function (req, res) {
   res.render("harid");
 });
 
-const server = http.createServer(app);
+const server = http.createServer(app); // shu app joylashlash joy singlethread deyiladi, xamma zaproslar shu yerga keladi
 let PORT = 3000;
 server.listen(PORT, function () {
   console.log(`The server is running succesfully on port: ${PORT}`);
