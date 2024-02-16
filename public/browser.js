@@ -27,7 +27,7 @@ function itemTemplate(item) {
 let createField = document.getElementById("create-field");
 
 document.getElementById("create-form").addEventListener("submit", function (e) {
-  e.preventDefault(); // boshqa page ga bydefault utib ketmasligi uchun
+  e.preventDefault(); // boshqa page ga bydefault utib ketmasligi uchun,  // traditional api requestni toxtatadi
 
   axios
     .post("/create-item", { reja: createField.value })
