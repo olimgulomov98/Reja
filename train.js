@@ -1,17 +1,32 @@
+// E-TASK
+
+function getReverse(str) {
+  // 1 method - by reverse
+  // return str.split("").reverse().join("");
+
+  // 2 method - by for loop
+  let result = "";
+  for (let i = str.length - 1; i >= 0; i--) {
+    result += str[i];
+  }
+  return result;
+}
+console.log(getReverse("hello"));
+
 // D-TASK
 
-function checkContent(str1, str2) {
-  // harflar katta yoki kichikligini oldini olish uchun
-  str1 = str1.toLowerCase();
-  str2 = str2.toLowerCase();
+// function checkContent(str1, str2) {
+//   // harflar katta yoki kichikligini oldini olish uchun
+//   str1 = str1.toLowerCase();
+//   str2 = str2.toLowerCase();
 
-  var a = str1.split("").sort().join("");
-  var b = str2.split("").sort().join("");
+//   var a = str1.split("").sort().join("");
+//   var b = str2.split("").sort().join("");
 
-  return a === b;
-}
+//   return a === b;
+// }
 
-console.log(checkContent("mitgroup", "gmtiprou"));
+// console.log(checkContent("mitgroup", "gmtiprou"));
 
 // C-TASK
 
