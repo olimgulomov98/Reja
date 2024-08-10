@@ -18,7 +18,7 @@ mongodb.connect(
       module.exports = client;
       const app = require("./app");
       const server = http.createServer(app); // shu app joylashlash joy singlethread deyiladi, xamma zaproslar shu yerga keladi
-      let PORT = 7002;
+      let PORT = process.env.PORT || 3000;
       server.listen(PORT, function () {
         console.log(
           `The server is running succesfully on port: ${PORT}, http://localhost:${PORT}`
